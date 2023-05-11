@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Teacher</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+		/>
+		<!-- css animator -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<!-- tailwind with config  -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: "#6339dc",
+						},
+					},
+				},
+			};
+		</script>
+		<!-- custom css  -->
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+	</head>
+	<body>
+		<!-- banner  -->
+		<header>
+			<!-- nav bar  -->
+			<nav
+				class="w-full bg-white px-[70px] py-[15px] flex justify-between items-center shadow-md"
+			>
+				<!-- left side  -->
+				<div class="left-nav logo cursor-pointer">
+					<a href="index.html">
+						<p class="text-primary text-[32px]">
+							<span class="text-white bg-primary px-2">Adu-vai</span>
+							Programming course
+						</p>
+					</a>
+				</div>
+
+				<!-- right side  -->
+				<div class="right-nav links">
+					<a href="./index.html">
+						<button
+							class="text-uppercase text-white bg-primary px-5 py-1 rounded-sm cursor-pointer"
+						>
+							Logout
+						</button>
+					</a>
+				</div>
+			</nav>
+		</header>
+
+		<!-- content section  -->
+		<section
+			id="content"
+			class="min-h-[90vh] bg-slate-200 py-[50px] px-[200px]"
+		>
+			<div class="text-center mb-8">
+				<button
+					type="submit"
+					class="px-8 py-2 border-b-4 border-primary text-primary font-bold text-center text-2xl uppercase"
+				>
+					My Courses
+				</button>
+			</div>
+
+			<!-- course list -->
+			<div class="course-list">
+				<ul class="flex flex-col gap-5" id="courseList">
+					<li
+						class="text-primary bg-white rounded shadow-md max-w-[400px] w-[350px] px-5 py-4 font-medium text-center text-2xl cursor-pointer mx-auto"
+					>
+						Database Management System
+					</li>
+					<li
+						class="text-primary bg-white rounded shadow-md max-w-[400px] w-[350px] px-5 py-4 font-medium text-center text-2xl cursor-pointer mx-auto"
+					>
+						Database Management System Lab
+					</li>
+					<li
+						class="text-primary bg-white rounded shadow-md max-w-[400px] w-[350px] px-5 py-4 font-medium text-center text-2xl cursor-pointer mx-auto"
+					>
+						Data Science
+					</li>
+					<li
+						class="text-primary bg-white rounded shadow-md max-w-[400px] w-[350px] px-5 py-4 font-medium text-center text-2xl cursor-pointer mx-auto"
+					>
+						Data Science Lab
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- footer section  -->
+		<footer class="bg-primary text-white p-8 text-center text-xl font-medium">
+			<p>All &copy; copyright reserve to adu-vai</p>
+		</footer>
+
+		<!-- modal code  -->
+		<div id="showStudentModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span
+					class="close-showStudentModal font-bold text-primary text-[35px] block w-max ml-auto text-right cursor-pointer px-5"
+					>&times;</span
+				>
+
+				<div class="student-list">
+					<table
+						class="min-w-[400px] text-center table-auto border-collapse border border-slate-300 mx-auto course-table mb-8"
+					>
+						<thead>
+							<tr class="bg-primary text-white">
+								<th class="text-center">Name</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="even:bg-amber-100 odd:bg-blue-100">
+								<td>Md. Ariful Islam</td>
+							</tr>
+							<tr class="even:bg-amber-100 odd:bg-blue-100">
+								<td>Majedul Islam</td>
+							</tr>
+							<tr class="even:bg-amber-100 odd:bg-blue-100">
+								<td>Sourov Kumar Das</td>
+							</tr>
+							<tr class="even:bg-amber-100 odd:bg-blue-100">
+								<td>Rahat Sarkar Rony</td>
+							</tr>
+							<tr class="even:bg-amber-100 odd:bg-blue-100">
+								<td>Shahrear Jahan</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<script src="./assets/js/showStudentModal.js"></script>
+	</body>
+</html>
